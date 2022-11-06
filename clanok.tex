@@ -1,20 +1,44 @@
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+% Metódy inžinierskej práce
 
-\usepackage[english]{babel}
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\documentclass[10pt,oneside,slovak,a4paper]{article}
 
-
-\usepackage{amsmath}
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
 
 \title{Porovnávanie hier podporujúcich výučbu a učenie}
-\author{Lukáš Lovás}
+
+\author{Lukáš Lovás\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small Semestrálny projekt v predmete Metódy inžinierskej práce}\\
+	{\small  ak. rok 2022/23, vedenie: Zuzana Špitálová}\\
+	{\small \texttt{xlovasl@stuba.sk}}\\
+	}
+
+\date{\small 6. november 2022} % upravte
+
+
+
 \begin{document}
+
 \maketitle
 
-\section{Abstrakt}
+\begin{abstract}
 V dnešnej dobe je pre mládež populárnou témou hranie hier. Z tohoto dôvodu vznikol smer výskumu, ktorý sa zameriava na využitie hier pri výučbe a učení v školách, pričom sa kladie dôraz na efektivitu výučby a učenia. V mojom článku sa chcem venovať niekoľko programom určených práve pre školy a študentov na zefektívnenie učenia, pričom mojim hlavným cieľom je porovnať konkrétne hry a ich vplyv na efektivitu učenia a výučby programovania. Výstupom bude prehľadový článok porovnávajúci konktrétne hry, cez vybrané aspekty. Medzi vybrané hry, ktoré som sa rozhodol analyzovať, patrí Clara's World\cite{ClarasWorld}, jednoducho vyzerajúca hra ktorá má hráčov oboznámiť so základnou syntaxou programovania, znázorňovaného pomocou Clary - herného modelu lienky, ktorý plní zadané príkazy pohybovaním sa po hernej ploche. ClaraQuest\cite{ClaraQuest} je modernejšia verzia, ktorá podporuje VR platformu, pričom bola vyvinutá v rámci výskumu na FIIT STU. Ďaľšou skúmanou hrou je Cubely\cite{Cubely}, ktorá sa taktiež zameriava na podporu výučby objektovo orientovaného programovania. A poslednou skúmanou hrou je Minecraft: Education\cite{MinecraftEd}, ktorá vznikla z populárnej hry Minecraft. Podporované hry využívajú aj aspekty virtuálnej reality, čím sa stávajú lepšie porovnatelnými medzi sebou. V závere článku zhodnotím výhody a nevýhody jednotlivých hier a sformulujem špecifické odporúčania pre zefektívnenie učenia a výučby. 
+
+\end{abstract}
+
+
 
 
 \section{Analýza oblasti}
@@ -38,10 +62,10 @@ Minecraft: Education je variant populárneho Minecraft-u, hry ktorá je známa m
 \section{Vyhodnotenie}
 
 \section{Záver}
+V súčasnosti je článok rozpracovaný. V ďalších častiach sa budem venovať samotnému porovnaniu jednotlivých hier a vyhodnoteniu, ktorá je kedy vhodná na použitie vzhľadom k téme učenia a používateľom hier. Chcem poďakovať Ing. Lukášovi Grafovi za konzultácie k danej téme.
 
 
-
-\bibliographystyle{alpha} 
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{sample}
-
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
